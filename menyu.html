@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menyu — BEASTKAFE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">BEAST<span>KAFE</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menyu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="main-nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="menyu.html" class="active">Menyu</a>
+        <a href="haqimizda.html">Biz haqimizda</a>
+        <a href="aloqa.html">Aloqa</a>
+        <a href="aloqa.html#forma" class="btn btn-gold btn-sm">Stol band qilish</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="section-tag">Ta'mlar olami</span>
+      <h1>BEASTKAFE Menyusi</h1>
+      <p>Kategoriyani tanlang va sevimli qahva hamda shirinliklaringiz bilan tanishing.</p>
+    </div>
+  </section>
+
+  <!-- MENYU VA TOZA CSS TABLAR -->
+  <section class="section">
+    <div class="container">
+      <div class="menu-tabs">
+        <!-- Radio tugmalar (JS siz filtrlash) -->
+        <input type="radio" name="category" id="cat-all" checked>
+        <input type="radio" name="category" id="cat-coffee">
+        <input type="radio" name="category" id="cat-dessert">
+        <input type="radio" name="category" id="cat-cold">
+
+        <div class="tab-labels">
+          <label for="cat-all">Barchasi</label>
+          <label for="cat-coffee">Issiq qahvalar</label>
+          <label for="cat-dessert">Shirinliklar</label>
+          <label for="cat-cold">Sovuq ichimliklar</label>
+        </div>
+
+        <div class="grid-3 menu-grid">
+          <!-- Issiq qahvalar -->
+          <article class="menu-card item-coffee">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=80" alt="Double Espresso">
+              <span class="menu-badge">Klassika</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h3>Double Espresso</h3>
+                <span class="price">26 000 so'm</span>
+              </div>
+              <p>To'yingan ta'm, qalin oltin rangli krema va yong'oq ifori.</p>
+            </div>
+          </article>
+
+          <article class="menu-card item-coffee">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80" alt="Oltin Kapuchino">
+              <span class="menu-badge">Xit</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h3>Oltin Kapuchino</h3>
+                <span class="price">38 000 so'm</span>
+              </div>
+              <p>Mayin sut ko'pigi, ikki karra espresso va vanil siropi.</p>
+            </div>
+          </article>
+
+          <article class="menu-card item-coffee">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Raf Qahva">
+              <span class="menu-badge">Firma</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h3>Karamelli Raf</h3>
+                <span class="price">42 000 so'm</span>
+              </div>
+              <p>Qaymoq, espresso va uy sharoitida tayyorlangan sho'r karamel.</p>
+            </div>
+          </article>
+
+          <!-- Shirinliklar -->
+          <article class="menu-card item-dessert">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Bodomli Kruassan">
+              <span class="menu-badge">Yangi</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h3>Bodomli Kruassan</h3>
+                <span class="price">34 000 so'm</span>
+              </div>
+              <p>Fransuz sariyog'idan tayyorlangan qarsildoq qatlama kruassan.</p>
+            </div>
+          </article>
+
+          <article class="menu-card item-dessert">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Shokoladli Velvet">
+              <span class="menu-badge">Xit</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h3>Shokoladli Velvet</h3>
+                <span class="price">46 000 so'm</span>
+              </div>
+              <p>Qora belgiya shokoladidan tayyorlangan mayin biskvitli tort.</p>
+            </div>
+          </article>
+
+          <article class="menu-card item-dessert">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80" alt="San Sebastyan Chizkeyk">
+              <span class="menu-badge">Firma</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h3>San Sebastyan</h3>
+                <span class="price">48 000 so'm</span>
+              </div>
+              <p>Iliq shokolad sousi bilan tortiladigan ispan chizkeyki.</p>
+            </div>
+          </article>
+
+          <!-- Sovuq ichimliklar -->
+          <article class="menu-card item-cold">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" alt="Iced Latte">
+              <span class="menu-badge">Muzdek</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h3>Iced Gold Latte</h3>
+                <span class="price">40 000 so'm</span>
+              </div>
+              <p>Muz kubiklari, sovuq sut, espresso va yengil asal ta'mi.</p>
+            </div>
+          </article>
+
+          <article class="menu-card item-cold">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="Espresso Tonik">
+              <span class="menu-badge">Tetik</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h3>Espresso Tonik</h3>
+                <span class="price">38 000 so'm</span>
+              </div>
+              <p>Sitrus bo'laklari, premium tonik va yangi damlangan espresso.</p>
+            </div>
+          </article>
+
+          <article class="menu-card item-cold">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" alt="Sitrus Limonad">
+              <span class="menu-badge">Tabiiy</span>
+            </div>
+            <div class="menu-body">
+              <div class="menu-top">
+                <h3>Oltin Sitrus Limonad</h3>
+                <span class="price">32 000 so'm</span>
+              </div>
+              <p>Apelsin, limon, marakuya pyuresi va yangi yalpiz barglari.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo">BEAST<span>KAFE</span></a>
+          <p style="margin-top: 14px;">Oltin ta'm, sara qahva va zamonaviy qulaylik uyg'unlashgan maskan.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="menyu.html">Menyu</a></li>
+            <li><a href="haqimizda.html">Biz haqimizda</a></li>
+            <li><a href="aloqa.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Ish vaqti</h4>
+          <ul>
+            <li>Dush – Juma: 08:00 – 23:00</li>
+            <li>Shanba: 09:00 – 00:00</li>
+            <li>Yakshanba: 09:00 – 23:00</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Manzil va Aloqa</h4>
+          <ul>
+            <li>Toshkent sh., Amir Temur ko'chasi, 45</li>
+            <li>+998 (71) 200-45-45</li>
+            <li>info@beastkafe.uz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 BEASTKAFE. Barcha huquqlar himoyalangan.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

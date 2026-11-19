@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa — BEASTKAFE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">BEAST<span>KAFE</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Menyu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="main-nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="menyu.html">Menyu</a>
+        <a href="haqimizda.html">Biz haqimizda</a>
+        <a href="aloqa.html" class="active">Aloqa</a>
+        <a href="#forma" class="btn btn-gold btn-sm">Stol band qilish</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <span class="section-tag">Biz bilan bog'laning</span>
+      <h1>Aloqa va Stol band qilish</h1>
+      <p>Sizni BEASTKAFEda kutib olishdan mamnunmiz. Stolni oldindan band qiling yoki bizga tashrif buyuring.</p>
+    </div>
+  </section>
+
+  <!-- ALOQA VA FORMA -->
+  <section class="section" id="forma">
+    <div class="container">
+      <div class="grid-2" style="align-items: start;">
+        <!-- Chap blok: Manzil va ish vaqti -->
+        <div class="contact-box">
+          <span class="section-tag">Ma'lumotlar</span>
+          <h2 style="font-size: 2rem; margin-bottom: 10px;">Manzilimiz</h2>
+          <div class="info-list">
+            <div class="info-item">
+              <strong>Manzil</strong>
+              <p>Toshkent sh., Yunusobod tumani, Amir Temur ko'chasi, 45-uy</p>
+            </div>
+            <div class="info-item">
+              <strong>Telefon</strong>
+              <p>+998 (71) 200-45-45</p>
+            </div>
+            <div class="info-item">
+              <strong>Elektron pochta</strong>
+              <p>info@beastkafe.uz</p>
+            </div>
+            <div class="info-item">
+              <strong>Ish vaqti</strong>
+              <table class="hours-table">
+                <tr>
+                  <td>Dushanba – Juma</td>
+                  <td>08:00 – 23:00</td>
+                </tr>
+                <tr>
+                  <td>Shanba</td>
+                  <td>09:00 – 00:00</td>
+                </tr>
+                <tr>
+                  <td>Yakshanba</td>
+                  <td>09:00 – 23:00</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- O'ng blok: Stol band qilish formasi -->
+        <div class="contact-box">
+          <span class="section-tag">Onlayn bron</span>
+          <h2 style="font-size: 2rem; margin-bottom: 22px;">Stol band qilish</h2>
+          <form action="#band-tasdiq" class="booking-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Ismingiz</label>
+                <input type="text" id="name" placeholder="Ismingizni kiriting" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon raqam</label>
+                <input type="tel" id="phone" placeholder="+998 90 123 45 67" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Sana</label>
+                <input type="date" id="date" required>
+              </div>
+              <div class="form-group">
+                <label for="time">Vaqt</label>
+                <input type="time" id="time" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Mehmonlar soni</label>
+              <select id="guests">
+                <option>1–2 kishi</option>
+                <option>3–4 kishi</option>
+                <option>5–6 kishi</option>
+                <option>7+ kishi (VIP zona)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="note">Qo'shimcha istaklar</label>
+              <textarea id="note" rows="3" placeholder="Deraza oldidagi stol, tug'ilgan kun bezagi va h.k."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold">Stolni band qilish</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo">BEAST<span>KAFE</span></a>
+          <p style="margin-top: 14px;">Oltin ta'm, sara qahva va zamonaviy qulaylik uyg'unlashgan maskan.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="menyu.html">Menyu</a></li>
+            <li><a href="haqimizda.html">Biz haqimizda</a></li>
+            <li><a href="aloqa.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Ish vaqti</h4>
+          <ul>
+            <li>Dush – Juma: 08:00 – 23:00</li>
+            <li>Shanba: 09:00 – 00:00</li>
+            <li>Yakshanba: 09:00 – 23:00</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Manzil va Aloqa</h4>
+          <ul>
+            <li>Toshkent sh., Amir Temur ko'chasi, 45</li>
+            <li>+998 (71) 200-45-45</li>
+            <li>info@beastkafe.uz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 BEASTKAFE. Barcha huquqlar himoyalangan.
+      </div>
+    </div>
+  </footer>
+
+  <!-- TASDIQLASH MODALI (:target) -->
+  <div id="band-tasdiq" class="modal">
+    <div class="modal-content" style="text-align: center;">
+      <a href="#" class="modal-close" aria-label="Yopish">&times;</a>
+      <h3>Rahmat!</h3>
+      <p>Stol band qilish so'rovingiz qabul qilindi. Sizni BEASTKAFEda kutib qolamiz.</p>
+      <a href="index.html" class="btn btn-gold">Bosh sahifaga qaytish</a>
+    </div>
+  </div>
+
+</body>
+</html>
